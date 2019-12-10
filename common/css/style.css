@@ -1,0 +1,436 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300);
+
+
+body{ color: #333333;
+  background-color:#fffffC;
+  font-family: "Meiryo","メイリオ",sans-serif;
+  margin: 0;}
+
+/*リンク関連*/
+    a{color: #000000;  }
+    a:hover{color: #9ebfff;}
+
+  #page {
+  }
+
+#prepagehead{
+  background-color: #FFFFFF;
+  position: fixed;
+  top: 0;
+  height: 70px;
+  z-index: 30;
+  width: 100%;
+}
+
+  #pagehead{
+    margin: 0 auto;
+    width: 980px;
+
+  }
+
+  #pagehead #title{
+    margin-left: 20px;
+    float: left;
+
+}
+ #title a{
+   color: inherit;
+   text-decoration: none;
+ }
+
+  #pagehead #sitetitle {
+    font-size: 30px;
+    line-height: 1.2;
+    margin-bottom: 0;
+    margin-top: 10px;
+    font-family: 'Open Sans Condensed', sans-serif;
+  }
+
+#pagehead #catchcopy{
+  font-size: 16px;
+  line-height: 1.5;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+/*グローバルナビ*/
+#pagehead .globalnavi{
+  border:solid #CCCCCC;
+  border-width: 0px 0;        /*グローバルナビの囲い*/
+  float: right;
+  padding: 10px 0;
+  font-family: 'Open Sans Condensed', sans-serif;
+
+}
+
+                              /*グローバルナビを入れるために空間を開ける装置*/
+#pagehead:after{
+  content: "";
+  clear:both;
+  display: block;
+}
+
+#pagehead ul.globalnavi{
+  margin-top: 20px;
+  margin-right: 5px;
+  padding: 0;
+}
+
+#pagehead ul.globalnavi  li {
+  list-style: none;
+  width: 170px;
+  float: left;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 24px;
+  line-height: 1.429;
+  border-left: solid 1px #CCCCCC;
+  padding: 0 10px;
+}
+
+#pagehead ul.globalnavi li:first-child{
+  border-left: none;
+}
+
+#pagehead ul.globalnavi li a{
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 3px 0;
+}
+
+/*マウスが重なった時の背景色*/
+#pagehead ul.globalnavi li a:hover,
+#pagehead ul.globalnavi li.current a{
+  background-color:  rgba(158, 191, 255,0.8) ;
+/*background-color: rgba(116, 223, 204,0.6);*/
+color: #FFFFFF;
+border-radius: 2px;
+
+}
+
+#pagefoot #copyright small{
+  font-size: 12px;
+  line-height: 1.5;
+}
+
+
+/*開始場所を７０pxにすることでタイトル部分に重ならないように高さを調節した　７０はタイトルの幅に連動させるべし*/
+#exceptpagehead{
+  position: relative;
+  top: 70px;
+  background: rgb(232, 232, 232);
+}
+
+
+#pagebody{
+  width: 980px;
+ margin: 0 auto;
+
+}
+
+#pagebody p { font-size: 14px;}
+
+/*検索関係*/
+#pagebody select{ height: 50px;
+                  width:  200px;}
+
+/*
+#pagebody .kensaku {
+  font-size: 24px;
+padding-left: 30px;
+padding-top:  15px;
+font-weight: bold;
+}
+
+#pagebody .kensakubox{
+  border: solid 10px;
+  width: 440px;
+  margin: 50px;
+  background-color: #FFFFFF;
+  position: absolute; top: 70px; left: 30px;
+}
+
+#pagebody .kensakuboxtotal {
+  position:  relative;
+}*/
+
+/*見出し*/
+#pagebody header .pagetitle {
+  font-size: 12px;
+  color:  black;
+  padding: 7px 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+  border-top: solid 1px black;
+  border-bottom:solid 1px black;
+  text-align: center;
+  }
+
+  #pagebody header .pageinformation{
+    font-size: 50px;
+    text-align: center;
+    padding: 0;
+    margin: 14px;
+    font-family: 'Open Sans Condensed', sans-serif;
+
+  }
+
+  #pagebody header .pagesubinformation{
+    font-size: 16px;
+    text-align: center;
+  }
+
+
+  /*図のマージンをノーマルに対抗するために配置*/
+#pagebody figure{
+  margin: 0;
+  padding: 0;
+}
+
+#pagebody .heading-typeA {
+  font-size: 10px;
+  color: #617dac;
+  border-bottom: solid 1px #617dac;
+  padding: 0px;}
+
+#pagebody .heading-typeB {
+  font-size: 16px;
+  border-left: solid 5px #E3E4D9;
+  background-color: #FFFFEE;
+  padding-left: 10px;}
+
+#pagebody .heading-typeC { font-size: 14px;}
+
+#pagebody .articledetailfoot{
+  border-top: solid 1px #CCCCCC;
+  margin-top: 30px;
+  padding-top: 15px;
+}
+
+#pagebody .articledetailbody section{
+  margin: 30px 0px;
+}
+
+
+/*本にかかれてない部分　ネタの部分 投稿する部分*/
+
+.articlemap {
+  text-align: center;
+}
+
+
+#pagebody .postingmatome .userposting{
+    float: left;
+    margin-right: 40px;
+}
+
+#pagebody .postingmatome .userposting a{
+    text-decoration: none;
+}
+#pagebody .postingmatome .userposting a:hover{
+    color: black;
+}
+
+#pagebody .postingmatome .userposting p{
+  text-align: center;
+  margin: 0;
+  padding: 12px 0 12px 0;
+  font-size: 16px;
+}
+
+
+
+
+
+
+#pagebody .postingmatome .userposting:hover{
+  opacity: 0.8;
+}
+
+#pagebody .postingmatome .userpostingtop{
+  position: relative;
+}
+
+
+#pagebody .postingmatome .userposting .userpostingtop  .username{
+  font-size: 22px;
+  padding-top: 2px;
+}
+
+#pagebody .postingmatome .userposting .userpostingtop  .username a{
+    font-family: 'Open Sans Condensed', sans-serif;
+    text-decoration: none;
+    color: #000000;
+}
+
+#pagebody .postingmatome .userposting .userpostingtop .postinginfomation{
+  font-size: 14px;
+  position: absolute;
+  top: 9px;
+  left: 110px;
+}
+
+/*
+#pagebody .postingmatome .userposting .userpostingtop .postingmoney{
+}
+
+#pagebody .postingmatome .userposting .userpostingtop .postingtime{
+}
+
+#pagebody .postingmatome .userposting .userpostingtop .postingarea{
+}*/
+
+#pagebody .postingmatome .userposting .userpostingtop .postingmark{
+  float: right;
+  padding-top: 2px;
+}
+
+#pagebody .postingmatome .userposting:nth-child(4n){
+  margin-right: 0;
+}
+
+#pagebody .postingmatome .userposting:nth-child(4n+1){
+  margin-left: 0;
+}
+
+#pagebody .postingmatome .userposting img{
+  vertical-align: bottom;
+  width: 215px;
+  height: 215px;
+  border-radius: 30px
+}
+
+#pagebody .postingmatome .userposting .userpostingbottom .userpostingtext{
+  color: #FFF;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 288px;
+  padding: 5px 10px;
+  -moz-box-sizing:border-box;
+  box-sizing: border-box;
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  border-radius: 10px;
+}
+
+#pagebody .postingmatome .userposting .userpostingbottom .userpostingtext p{
+  margin: 0;
+}
+
+
+#pagebody .postingmatome .userposting .userpostingbottom .userpostingtext .postingtitle{
+  font-size:18px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+
+#pagebody .postingmatome .userposting .userpostingbottom .userpostingtext .postingspot{
+  font-size:16px;
+  line-height: 1.5;
+  margin: 0;
+  float: right;
+}
+
+
+#pagebody .postingmatome:after{
+  content: "";
+  clear: both;
+  display: block;
+}
+
+
+/* ▼(A)表示領域全体 */
+div.tabbox { margin: 0px; padding: 0px; width: 980px; position: relative; }
+
+/* ▼(B)タブ部分 */
+p.tabs { margin: 0px; padding: 0px; }
+p.tabs a {
+   /* ▼(B-2)リンクをタブのように見せる */
+   display: block; width: 74px; float: left;
+   margin: 0px 7px 0px 0px; padding: 0px;
+   text-align: center;
+   border-radius: 6px 6px 0px 0px; /* 角を丸くする */
+}
+
+p.tabs img{
+  width: 30px;
+  height: 30px;
+  padding-top: 7px;
+}
+
+/* ▼(B-3)各タブの配色 */
+p.tabs a.tab1 { background-color:rgb(237, 74, 74) ;   color: white; margin-left: 6px; }
+p.tabs a.tab2 { background-color: rgb(79, 113, 130) ; color:white;}
+p.tabs a.tab3 { background-color: rgba(158, 191, 255,0.8) ;   color: white; }
+p.tabs a.tab4 { background-color: rgb(153, 245, 71) ;  color: white; }
+p.tabs a.tab5 { background-color: rgb(255, 253, 50) ; color:white;}
+p.tabs a.tab6 { background-color: rgb(255, 179, 101) ;   color: white; }
+p.tabs a.tab7 { background-color: rgb(255, 111, 57) ;  color: white; }
+p.tabs a.tab8 { background-color: rgb(235, 182, 91) ; color:white;}
+p.tabs a.tab9 { background-color: rgb(175, 102, 194) ;  color: white; }
+p.tabs a.tab10 { background-color: rgb(54, 175, 73) ;  color: white; }
+p.tabs a.tab11 { background-color:  rgb(125, 98, 51);  color:white;}
+p.tabs a.tab12 { background-color: rgb(50, 48, 39) ;   color: white; }
+
+p.tabs a:hover { color: yellow; }
+
+/* ▼(C)タブ中身のボックス */
+div.tab {
+   /* ▼(C-2)ボックス共通の装飾 */
+   height: 400px;
+   overflow: auto;
+   clear: left;
+}
+
+/* ▼(C-3)各ボックスの配色 */
+div#tab1 { border: 4px solid rgb(237, 74, 74) ;  background-color: white;}
+div#tab2 { border: 4px solid rgb(79, 113, 130) ; background-color: white; }
+div#tab3 { border: 4px solid rgba(158, 191, 255,0.8) ; background-color: white; }
+div#tab4 { border: 4px solid rgb(153, 245, 71)  ; background-color: white; }
+div#tab5 { border: 4px solid rgb(255, 253, 50) ; background-color: white; }
+div#tab6 { border: 4px solid rgb(255, 179, 101) ;  background-color: white; }
+div#tab7 { border: 4px solid rgb(255, 111, 57) ; background-color: white; }
+div#tab8 { border: 4px solid rgb(235, 182, 91) ; background-color: white; }
+div#tab9 { border: 4px solid rgb(175, 102, 194); background-color: white; }
+div#tab10 { border: 4px solid rgb(54, 175, 73) ; background-color: white; }
+div#tab11 { border: 4px solid  rgb(125, 98, 51) ; background-color: white; }
+div#tab12 { border: 4px solid rgb(50, 48, 39)  ; background-color: white; }
+div.tab p { margin: 1em; }
+
+#pagebody .tabbox .submitSet{
+  float: left;
+  margin-left: 65px;
+}
+
+#pagebody .tabbox .submitSet button{
+  width: 150px;
+  margin: 3px 44px;
+}
+
+/*ページトップへ移動するためのリンク*/
+
+#pagebody .pagetoplink {
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 10px;
+  background-color: rgba(85, 85, 85, 1);
+}
+
+#pagebody .pagetoplink a{
+    font-size: 16px;
+    color: #FFFFFF;
+    text-decoration: none;
+    background-image: url("../images/icon/pagetopsmallkiritori.png");
+    background-repeat: no-repeat;
+    padding-top: 15px;
+    background-position:top;
+    display: block;
+}
+
+
+#pagefoot p{
+  margin: 0;
+  padding: 0;
+  float: right;
+}

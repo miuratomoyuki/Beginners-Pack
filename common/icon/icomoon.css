@@ -1,0 +1,154 @@
+@font-face {
+    font-family: 'icomoon';
+    src:    url('fonts/icomoon.eot?dz13f5');
+    src:    url('fonts/icomoon.eot?dz13f5#iefix') format('embedded-opentype'),
+        url('fonts/icomoon.ttf?dz13f5') format('truetype'),
+        url('fonts/icomoon.woff?dz13f5') format('woff'),
+        url('fonts/icomoon.svg?dz13f5#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    font-size: 19px;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home:before {
+    content: "\e900";
+}
+
+.icon-image:before{
+    content: "\e90d";
+}
+.icon-images:before {
+    content: "\e90e";
+
+}
+.icon-camera:before {
+    content: "\e90f";
+}
+.icon-connection:before {
+    content: "\e91b";
+}
+.icon-folder:before {
+    content: "\e92f";
+}
+.icon-folder-upload:before {
+    content: "\e934";
+}
+.icon-coin-yen:before {
+    content: "\e93e";
+    font-size: 19px;
+    vertical-align: middle;
+}
+.icon-location2:before {
+    content: "\e948";
+    vertical-align: middle;
+
+}
+.icon-compass:before {
+    content: "\e949";
+}
+.icon-clock:before {
+    content: "\e94e";
+    vertical-align: middle;
+
+}
+.icon-clock2:before {
+    content: "\e94f";
+    vertical-align: middle;
+
+}
+.icon-alarm:before {
+    content: "\e950";
+}
+.icon-box-remove:before {
+    content: "\e95f";
+}
+.icon-upload:before {
+    content: "\e961";
+}
+.icon-forward:before {
+    content: "\e969";
+}
+.icon-reply:before {
+    content: "\e96a";
+}
+.icon-bubble:before {
+    content: "\e96b";
+}
+.icon-user:before {
+    content: "\e971";
+}
+.icon-hour-glass:before {
+    content: "\e979";
+}
+.icon-search:before {
+    content: "\e986";
+}
+.icon-wrench:before {
+    content: "\e991";
+}
+.icon-cog:before {
+    content: "\e994";
+}
+.icon-spoon-knife:before {
+    content: "\e9a3";
+}
+.icon-power:before {
+    content: "\e9b5";
+}
+.icon-sphere:before {
+    content: "\e9c9";
+}
+
+.icon-star-empty:before {
+    content: "\e9d7";
+}
+
+.icon-star-empty:hover {
+    content: "\e9d7";
+    color: rgb(250, 255, 15)
+}
+
+.icon-star-full:before {
+    content: "\e9d9";
+}
+
+.icon-star-full:hover{
+  color: rgb(247, 245, 52);
+}
+
+.icon-heart:before {
+    content: "\e9da";
+}
+.icon-heart:hover{
+  color: rgb(249, 94, 150);
+}
+
+.icon-checkmark2:before {
+    content: "\ea11";
+}
+
+.icon-checkmark2:hover{
+  color: rgb(255, 29, 29);
+}
+
+.icon-shift:before {
+    content: "\ea4f";
+}
+.icon-checkbox-checked:before {
+    content: "\ea52";
+}
